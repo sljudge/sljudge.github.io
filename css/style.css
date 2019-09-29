@@ -32,25 +32,26 @@ nav {
     font-size: 2rem;
     padding: 1rem 0.5rem; }
   nav .logo {
-    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.2rem;
     width: 4.5rem;
     margin: 0;
     padding: 0;
-    background-color: #b7b7b7;
+    background-color: #232323;
     border: #232323 solid 0.2rem; }
-    nav .logo i {
-      color: #232323; }
   nav .icon-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    top: 35vh;
+    top: 37.5vh;
     width: 4.5rem;
-    height: 15rem;
+    height: 25vh;
     margin: 0;
-    background: linear-gradient(180deg, #171717 0%, black 100%);
-    border-radius: 1rem; }
+    background: linear-gradient(180deg, rgba(23, 23, 23, 0.9) 0%, rgba(0, 0, 0, 0.95) 100%);
+    border-radius: 1rem 0 0 1rem; }
     nav .icon-container i {
       width: 4.5rem;
       color: #b7b7b7; }
@@ -73,60 +74,165 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-shrink: 0;
   height: 100vh;
   background-color: #8f84fd;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.jpg"), center/80%; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("/img/cover.jpg"), center/80%; }
   @media screen and (orientation: landscape) and (max-height: 500px) {
     .banner {
       justify-content: flex-start; } }
   .banner .banner-text {
+    height: 25vh;
     width: 100%;
-    color: whitesmoke; }
-    .banner .banner-text h1 {
-      height: 10rem;
-      width: 60%;
+    background: linear-gradient(295deg, rgba(23, 23, 23, 0.98) 0%, rgba(0, 0, 0, 0.95) 100%);
+    box-shadow: 50px 0 50px 0 #232323; }
+    .banner .banner-text svg {
+      display: block;
+      height: 100%;
+      width: 100%;
       padding: 1rem;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      font-size: 4rem;
-      font-weight: 600;
-      text-align: right;
-      letter-spacing: 0.2rem;
-      background: linear-gradient(295deg, #171717 0%, black 100%);
-      animation-duration: 5s;
-      animation-name: slidein; }
+      margin: 0;
+      animation-duration: 7s;
+      animation-name: slidein;
+      animation-direction: 5s; }
 
 @keyframes slidein {
   from {
-    margin-right: 100%;
-    width: 150%; }
+    width: 120%; }
   to {
-    margin-right: 0;
-    width: 60%; } }
-    .banner .banner-text p {
-      position: absolute;
-      left: 30%;
-      height: 7rem;
-      width: 70%;
-      padding: 1.4rem;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      background: linear-gradient(129deg, #171717 0%, black 100%);
-      font-size: 2rem;
-      animation: slide 4s forwards; }
+    width: 100%; } }
+      .banner .banner-text svg g path {
+        stroke-width: 20; }
+      .banner .banner-text svg path {
+        stroke-width: 15; }
+      .banner .banner-text svg g path:nth-child(2) {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: line-anim 10s ease forwards; }
+      .banner .banner-text svg g path:nth-child(3) {
+        stroke-dasharray: 654;
+        stroke-dashoffset: 654;
+        animation: line-anim 10s ease forwards 0.3s; }
+      .banner .banner-text svg g path:nth-child(4) {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation: line-anim 10s ease forwards 0.8s; }
+      .banner .banner-text svg g path:nth-child(5) {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 600;
+        animation: line-anim 10s ease forwards 0.9s; }
+      .banner .banner-text svg g path:nth-child(6) {
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: line-anim 10s ease forwards 1.2s; }
+      .banner .banner-text svg g path:nth-child(7) {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: line-anim 10s ease forwards 1.5s; }
+      .banner .banner-text svg g path:nth-child(8) {
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: line-anim 10s ease forwards 1.8s; }
+      .banner .banner-text svg g path:nth-child(9) {
+        stroke-dasharray: 516;
+        stroke-dashoffset: 516;
+        animation: line-anim 10s ease forwards 2.1s; }
+      .banner .banner-text svg path:nth-child(3) {
+        stroke-dasharray: 700;
+        stroke-dashoffset: 700;
+        animation: line-anim 2s ease forwards 4s; }
+      .banner .banner-text svg path:nth-child(4) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(5) {
+        stroke-width: 15;
+        stroke-dasharray: 345;
+        stroke-dashoffset: 345;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(6) {
+        stroke-dasharray: 365;
+        stroke-dashoffset: 365;
+        animation: line-anim 2s ease forwards 4s; }
+      .banner .banner-text svg path:nth-child(7) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(8) {
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(9) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(10) {
+        stroke-dasharray: 345;
+        stroke-dashoffset: 345;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(11) {
+        stroke-dasharray: 413;
+        stroke-dashoffset: 413;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(12) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(13) {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(14) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(15) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(16) {
+        stroke-dasharray: 365;
+        stroke-dashoffset: 365;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(17) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(18) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: line-anim 2s ease forwards 4s; }
+      .banner .banner-text svg path:nth-child(19) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(20) {
+        stroke-dasharray: 414;
+        stroke-dashoffset: 414;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(21) {
+        stroke-dasharray: 263;
+        stroke-dashoffset: 263;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(22) {
+        stroke-dasharray: 553;
+        stroke-dashoffset: 553;
+        animation: fill 0.3s ease forwards 6s; }
+      .banner .banner-text svg path:nth-child(23) {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: fill 0.3s ease forwards 6s; }
 
-@keyframes slide {
-  from {
-    margin-left: 100%;
-    width: 150%; }
+@keyframes line-anim {
   to {
-    margin-left: 0;
-    width: 70%; } }
-      @media screen and (max-width: 400px) {
-        .banner .banner-text p {
-          height: 8rem; } }
+    stroke-dashoffset: 0; } }
+
+@keyframes fill {
+  from {
+    fill: transparent; }
+  to {
+    fill: white; } }
 
 @media screen and (min-width: 1250px) {
   .large-screen-display {
