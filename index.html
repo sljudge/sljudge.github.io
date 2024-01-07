@@ -10,58 +10,73 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel='icon' href='./img/favicon.ico'>
 
-  <title>Judge Dev</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <title>Sam Judge - Links</title>
+  <script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
 
-    html {
-      margin: 0;
-      padding: 0;
-      font-size: 15px;
-      font-family: 'Merriweather', sans-serif;
-      overflow: hidden;
-    }
-
-    @media screen and (max-width: 750px) {
-      html {
-        font-size: 12px;
-      }
-    }
-
-    @media screen and (max-height: 700px) {
-      html {
-        font-size: 12px;
-      }
-    }
-
-    body {
-      max-height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    p {
-      padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.3);
-      font-weight: 600;
-      font-family: "Open Sans", sans-serif;
-      letter-spacing: 0.05rem;
-      word-spacing: 0.25rem;
-      font-size: 1.2rem;
-    }
-  </style>
 </head>
 
 <body>
 
-  <div id="root"></div>
-  <script src="./app.js"></script>
+  <div class="min-h-screen bg-gray-100">
+    <div class="flex flex-col gap-y-8 p-8">
+      <div>
+        <h2 class="text-2xl mb-4">Huguenots Services</h2>
+        <ul class="flex flex-col gap-y-2 list-disc">
+          <li>
+            <a href="https://fundcentres.lgim.com/en/uk/institutional/fund-centre/" target="_blank" class="underline">
+              LGIM Fund centre
+            </a>
+          </li>
+          <li>
+            <a href="https://fundcentres.lgim.com/en/uk/institutional/fund-centre/Unit-Trust/N-Tracker-Trust/" target="_blank" class="underline">
+              LGIM Fund page
+            </a>
+          </li>
+          <li>
+            <a href="https://www.springcapitalpartners.com/" target="_blank" class="underline">
+              Spring capital website
+            </a>
+          </li>
+          <li>
+            <a href="https://time-investments.com/our-products/income-funds/time-commercial-long-income/" target="_blank" class="underline">
+              TIME investment fund pages
+            </a>
+          </li>
+          <li>
+            <a href="https://www.polarcapital.co.uk/" target="_blank" class="underline">
+              Polar capital website
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl mb-4">Spire XYZ</h2>
+        <ul class="flex flex-col gap-y-2 list-disc">
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=com.cheffocustomerapp&hl=en_US&pli=1" target="_blank" class="underline">
+              Cheffo native app
+            </a>
+          </li>
+          <li>
+            <a href="https://cheffo.org/" target="_blank" class="underline">
+              Cheffo web app
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl mb-4">Havas CX helia</h2>
+        <ul class="flex flex-col gap-y-2 list-disc">
+          <li>
+            <a href="https://www.havashelia.co.uk/" target="_blank" class="underline">
+              Havas CX helia company website
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 
